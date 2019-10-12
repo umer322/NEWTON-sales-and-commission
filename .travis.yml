@@ -25,7 +25,7 @@ before_deploy:
 - popd
 deploy:
   provider: releases
-  api_key: a828f73deb426f5ab1ca3012cd4d035c9fe28e86
+  api_key: ed4f06fd4fb8cd9db91ecd882bf448f54593fbb2
   file: build/ios/iphoneos/app.ipa
   on:
     repo: umer322/NEWTON-sales-and-commission
