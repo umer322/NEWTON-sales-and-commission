@@ -1,5 +1,6 @@
 os: osx
 language: generic
+osx_image: xcode8.3
 before_script:
 - brew update
 - brew install --HEAD usbmuxd
@@ -10,7 +11,7 @@ before_script:
 - brew install ios-deploy
 - git clone https://github.com/flutter/flutter.git -b beta --depth 1
 script:
-- flutter/bin/flutter build ios --debug 
+- flutter/bin/flutter -v build ios --debug --no-codesign
 cache:
   directories:
   - "$HOME/.pub-cache"
